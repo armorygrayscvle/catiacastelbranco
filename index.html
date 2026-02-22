@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Catia Castelbranco — Photographer. Capturing light, emotion, and story through the lens.">
+  <title>Catia Castelbranco — Photographer</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <a href="#hero" class="nav-logo">Catia Castelbranco</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#work">Work</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg">
+      <img src="assets/hero.jpg" alt="Hero photograph" class="hero-img" id="heroImg">
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Photography</p>
+      <h1>Catia<br><em>Castelbranco</em></h1>
+      <p class="hero-tagline">Light &nbsp;·&nbsp; Emotion &nbsp;·&nbsp; Story</p>
+    </div>
+    <a href="#work" class="hero-scroll" aria-label="Scroll to work">
+      <span class="scroll-line"></span>
+    </a>
+  </section>
+
+  <!-- WORK -->
+  <section id="work">
+    <div class="section-header">
+      <span class="label">Portfolio</span>
+      <h2>Selected Work</h2>
+    </div>
+
+    <!-- Category filter -->
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="portrait">Portrait</button>
+      <button class="filter-btn" data-filter="editorial">Editorial</button>
+      <button class="filter-btn" data-filter="wedding">Wedding</button>
+      <button class="filter-btn" data-filter="landscape">Landscape</button>
+    </div>
+
+    <div class="gallery" id="gallery">
+      <!-- Row 1 -->
+      <div class="gallery-item large" data-category="portrait" data-index="0">
+        <img src="assets/portfolio/01.jpg" alt="Portrait 01" loading="lazy">
+        <div class="gallery-overlay"><span>Portrait</span></div>
+      </div>
+      <div class="gallery-item" data-category="editorial" data-index="1">
+        <img src="assets/portfolio/02.jpg" alt="Editorial 02" loading="lazy">
+        <div class="gallery-overlay"><span>Editorial</span></div>
+      </div>
+      <div class="gallery-item" data-category="wedding" data-index="2">
+        <img src="assets/portfolio/03.jpg" alt="Wedding 03" loading="lazy">
+        <div class="gallery-overlay"><span>Wedding</span></div>
+      </div>
+      <!-- Row 2 -->
+      <div class="gallery-item" data-category="landscape" data-index="3">
+        <img src="assets/portfolio/04.jpg" alt="Landscape 04" loading="lazy">
+        <div class="gallery-overlay"><span>Landscape</span></div>
+      </div>
+      <div class="gallery-item large" data-category="editorial" data-index="4">
+        <img src="assets/portfolio/05.jpg" alt="Editorial 05" loading="lazy">
+        <div class="gallery-overlay"><span>Editorial</span></div>
+      </div>
+      <div class="gallery-item" data-category="portrait" data-index="5">
+        <img src="assets/portfolio/06.jpg" alt="Portrait 06" loading="lazy">
+        <div class="gallery-overlay"><span>Portrait</span></div>
+      </div>
+      <!-- Row 3 -->
+      <div class="gallery-item" data-category="wedding" data-index="6">
+        <img src="assets/portfolio/07.jpg" alt="Wedding 07" loading="lazy">
+        <div class="gallery-overlay"><span>Wedding</span></div>
+      </div>
+      <div class="gallery-item" data-category="portrait" data-index="7">
+        <img src="assets/portfolio/08.jpg" alt="Portrait 08" loading="lazy">
+        <div class="gallery-overlay"><span>Portrait</span></div>
+      </div>
+      <div class="gallery-item large" data-category="landscape" data-index="8">
+        <img src="assets/portfolio/09.jpg" alt="Landscape 09" loading="lazy">
+        <div class="gallery-overlay"><span>Landscape</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="about-inner">
+      <div class="about-image">
+        <img src="assets/catia.jpg" alt="Catia Castelbranco" loading="lazy">
+      </div>
+      <div class="about-text">
+        <span class="label">About</span>
+        <h2>Behind the lens</h2>
+        <p class="about-lead">
+          I'm Catia Castelbranco — a photographer based in Lisbon, Portugal,
+          with a passion for quiet moments and honest light.
+        </p>
+        <p>
+          My work spans portrait, editorial, wedding and landscape photography.
+          Every session begins with listening — understanding the people, the
+          place, and the feeling that needs to be preserved. The result is
+          imagery that is both timeless and deeply personal.
+        </p>
+        <p>
+          With over a decade of experience, I have had the privilege of
+          collaborating with individuals, couples, and brands across Europe.
+          Whether you are planning a wedding, a campaign, or simply want
+          photographs that truly look like you — I would love to hear from you.
+        </p>
+        <div class="about-stats">
+          <div class="stat">
+            <strong>10+</strong>
+            <span>Years of experience</span>
+          </div>
+          <div class="stat">
+            <strong>300+</strong>
+            <span>Sessions delivered</span>
+          </div>
+          <div class="stat">
+            <strong>12</strong>
+            <span>Countries photographed</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="section-header">
+      <span class="label">Services</span>
+      <h2>What I offer</h2>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <span class="service-num">01</span>
+        <h3>Portrait</h3>
+        <p>Individual or family sessions crafted around natural light and genuine expression. Studio and outdoor available.</p>
+        <span class="service-tag">From €250</span>
+      </div>
+      <div class="service-card">
+        <span class="service-num">02</span>
+        <h3>Wedding</h3>
+        <p>Full-day coverage that tells the complete story of your day — from the quiet morning to the last dance.</p>
+        <span class="service-tag">From €1 800</span>
+      </div>
+      <div class="service-card">
+        <span class="service-num">03</span>
+        <h3>Editorial &amp; Brand</h3>
+        <p>Campaign imagery for publications, brands, and creative projects. Art direction available on request.</p>
+        <span class="service-tag">Custom quote</span>
+      </div>
+      <div class="service-card">
+        <span class="service-num">04</span>
+        <h3>Landscape &amp; Travel</h3>
+        <p>Location scouting and travel photography for tourism boards, hospitality, and personal projects.</p>
+        <span class="service-tag">Custom quote</span>
+      </div>
+    </div>
+    <div class="services-note">
+      <p>All packages include high-resolution digital files, private online gallery, and a print release. <a href="#contact">Get in touch</a> for a tailored quote.</p>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials">
+    <div class="section-header">
+      <span class="label">Kind words</span>
+    </div>
+    <div class="testimonials-track" id="testimonialsTrack">
+      <blockquote class="testimonial">
+        <p>"Working with Catia was one of the best decisions we made for our wedding. Every photo tells a story we never want to forget."</p>
+        <cite>— Ana &amp; Pedro, Lisbon 2024</cite>
+      </blockquote>
+      <blockquote class="testimonial">
+        <p>"The portraits she created for my brand campaign exceeded every expectation. Her eye for light is extraordinary."</p>
+        <cite>— Sofia Martins, Creative Director</cite>
+      </blockquote>
+      <blockquote class="testimonial">
+        <p>"I had been nervous about being in front of a camera my whole life. Catia made me feel completely at ease. The photos are stunning."</p>
+        <cite>— Margarida L., Portrait client</cite>
+      </blockquote>
+    </div>
+    <div class="testimonial-nav">
+      <button class="t-prev" id="tPrev" aria-label="Previous">&#8592;</button>
+      <button class="t-next" id="tNext" aria-label="Next">&#8594;</button>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="contact-inner">
+      <div class="contact-text">
+        <span class="label">Contact</span>
+        <h2>Let's create<br><em>something beautiful</em></h2>
+        <p>Available for sessions worldwide. Based in Lisbon, Portugal.</p>
+        <ul class="contact-info">
+          <li><a href="mailto:hello@catiacastelbranco.com">hello@catiacastelbranco.com</a></li>
+          <li><a href="tel:+351900000000">+351 900 000 000</a></li>
+        </ul>
+        <div class="contact-socials">
+          <a href="#" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+          <a href="#" target="_blank" rel="noopener" aria-label="Facebook">Facebook</a>
+          <a href="#" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+        </div>
+      </div>
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="your@email.com" required>
+        </div>
+        <div class="form-group">
+          <label for="service">Service</label>
+          <select id="service" name="service">
+            <option value="">Select a service</option>
+            <option value="portrait">Portrait</option>
+            <option value="wedding">Wedding</option>
+            <option value="editorial">Editorial / Brand</option>
+            <option value="landscape">Landscape / Travel</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Send message</button>
+        <p class="form-feedback" id="formFeedback"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="footer-inner">
+      <span class="footer-logo">Catia Castelbranco</span>
+      <span class="footer-copy">&copy; <span id="year"></span> All rights reserved.</span>
+      <nav class="footer-nav">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button class="lb-close" id="lbClose" aria-label="Close">&times;</button>
+    <button class="lb-prev" id="lbPrev" aria-label="Previous">&#8592;</button>
+    <button class="lb-next" id="lbNext" aria-label="Next">&#8594;</button>
+    <div class="lb-img-wrap">
+      <img src="" alt="" id="lbImg">
+    </div>
+    <p class="lb-caption" id="lbCaption"></p>
+  </div>
+  <div class="lightbox-backdrop" id="lbBackdrop"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
